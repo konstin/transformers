@@ -1,0 +1,5 @@
+[project]
+name = "t5"
+version = "4.39.0.dev0"
+
+[project.optional-dependencies]

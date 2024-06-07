@@ -59,7 +59,7 @@ from transformers import (
     is_tensorboard_available,
     set_seed,
 )
-from transformers.models.t5.modeling_flax_t5 import shift_tokens_right
+from packages.t5 import shift_tokens_right
 from transformers.utils import send_example_telemetry
 
 

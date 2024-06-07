@@ -5646,7 +5646,7 @@ if TYPE_CHECKING:
         SWITCH_TRANSFORMERS_PRETRAINED_CONFIG_ARCHIVE_MAP,
         SwitchTransformersConfig,
     )
-    from .models.t5 import T5_PRETRAINED_CONFIG_ARCHIVE_MAP, T5Config
+    from packages.t5 import T5_PRETRAINED_CONFIG_ARCHIVE_MAP, T5Config
     from .models.table_transformer import (
         TABLE_TRANSFORMER_PRETRAINED_CONFIG_ARCHIVE_MAP,
         TableTransformerConfig,
@@ -5958,7 +5958,7 @@ if TYPE_CHECKING:
         from .models.siglip import SiglipTokenizer
         from .models.speech_to_text import Speech2TextTokenizer
         from .models.speecht5 import SpeechT5Tokenizer
-        from .models.t5 import T5Tokenizer
+        from packages.t5 import T5Tokenizer
         from .models.udop import UdopTokenizer
         from .models.xglm import XGLMTokenizer
         from .models.xlm_prophetnet import XLMProphetNetTokenizer
@@ -6032,7 +6032,7 @@ if TYPE_CHECKING:
         from .models.seamless_m4t import SeamlessM4TTokenizerFast
         from .models.splinter import SplinterTokenizerFast
         from .models.squeezebert import SqueezeBertTokenizerFast
-        from .models.t5 import T5TokenizerFast
+        from packages.t5 import T5TokenizerFast
         from .models.udop import UdopTokenizerFast
         from .models.whisper import WhisperTokenizerFast
         from .models.xglm import XGLMTokenizerFast
@@ -7834,7 +7834,7 @@ if TYPE_CHECKING:
             SwitchTransformersSparseMLP,
             SwitchTransformersTop1Router,
         )
-        from .models.t5 import (
+        from packages.t5 import (
             T5_PRETRAINED_MODEL_ARCHIVE_LIST,
             T5EncoderModel,
             T5ForConditionalGeneration,
@@ -8705,7 +8705,7 @@ if TYPE_CHECKING:
             TFSwinModel,
             TFSwinPreTrainedModel,
         )
-        from .models.t5 import (
+        from packages.t5 import (
             TF_T5_PRETRAINED_MODEL_ARCHIVE_LIST,
             TFT5EncoderModel,
             TFT5ForConditionalGeneration,
@@ -9058,7 +9058,7 @@ if TYPE_CHECKING:
             FlaxRoFormerPreTrainedModel,
         )
         from .models.speech_encoder_decoder import FlaxSpeechEncoderDecoderModel
-        from .models.t5 import (
+        from packages.t5 import (
             FlaxT5EncoderModel,
             FlaxT5ForConditionalGeneration,
             FlaxT5Model,

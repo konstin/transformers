@@ -23,7 +23,7 @@ if is_flax_available():
     from flax.training.common_utils import onehot
 
     from transformers import AutoTokenizer, FlaxMT5ForConditionalGeneration
-    from transformers.models.t5.modeling_flax_t5 import shift_tokens_right
+    from packages.t5 import shift_tokens_right
 
 
 @require_torch

@@ -112,7 +112,7 @@ class ConvertCommand(BaseTransformersCLICommand):
             convert_tf_checkpoint_to_pytorch(self._tf_checkpoint, self._config, self._pytorch_dump_output)
         elif self._model_type == "t5":
             try:
-                from ..models.t5.convert_t5_original_tf_checkpoint_to_pytorch import convert_tf_checkpoint_to_pytorch
+                from packages.t5.convert_t5_original_tf_checkpoint_to_pytorch import convert_tf_checkpoint_to_pytorch
             except ImportError:
                 raise ImportError(IMPORT_ERROR_MESSAGE)
 

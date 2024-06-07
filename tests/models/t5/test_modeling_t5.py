@@ -56,7 +56,7 @@ if is_torch_available():
         T5Model,
         T5Tokenizer,
     )
-    from transformers.models.t5.modeling_t5 import T5_PRETRAINED_MODEL_ARCHIVE_LIST
+    from packages.t5 import T5_PRETRAINED_MODEL_ARCHIVE_LIST
 
 
 class T5ModelTester:

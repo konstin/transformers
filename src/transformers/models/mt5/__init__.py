@@ -26,14 +26,14 @@ from ...utils import (
 
 
 if is_sentencepiece_available():
-    from ..t5.tokenization_t5 import T5Tokenizer
+    from packages.t5.tokenization_t5 import T5Tokenizer
 else:
     from ...utils.dummy_sentencepiece_objects import T5Tokenizer
 
 MT5Tokenizer = T5Tokenizer
 
 if is_tokenizers_available():
-    from ..t5.tokenization_t5_fast import T5TokenizerFast
+    from packages.t5.tokenization_t5_fast import T5TokenizerFast
 else:
     from ...utils.dummy_tokenizers_objects import T5TokenizerFast
 

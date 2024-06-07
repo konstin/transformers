@@ -214,7 +214,6 @@ from . import (
     swin2sr,
     swinv2,
     switch_transformers,
-    t5,
     table_transformer,
     tapas,
     time_series_transformer,
@@ -261,3 +260,4 @@ from . import (
     yolos,
     yoso,
 )
+from packages import t5
