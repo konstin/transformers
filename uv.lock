@@ -686,39 +686,14 @@ wheels = [
 
 [[distribution]]
 name = "datasets"
-version = "2.14.4"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "aiohttp" },
-    { name = "dill" },
-    { name = "fsspec", version = "2024.6.1", source = { registry = "https://pypi.org/simple" } },
-    { name = "fsspec", version = "2024.6.1", source = { registry = "https://pypi.org/simple" }, extra = "http" },
-    { name = "huggingface-hub" },
-    { name = "multiprocess" },
-    { name = "numpy" },
-    { name = "packaging" },
-    { name = "pandas" },
-    { name = "pyarrow" },
-    { name = "pyyaml" },
-    { name = "requests" },
-    { name = "tqdm" },
-    { name = "xxhash" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/1d/69/8cc725b5d38968fd118e4ce56a483b16e75b7793854c1a392ec4a34eeb31/datasets-2.14.4.tar.gz", hash = "sha256:ef29c2b5841de488cd343cfc26ab979bff77efa4d2285af51f1ad7db5c46a83b", size = 2178719 }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/66/f8/38298237d18d4b6a8ee5dfe390e97bed5adb8e01ec6f9680c0ddf3066728/datasets-2.14.4-py3-none-any.whl", hash = "sha256:29336bd316a7d827ccd4da2236596279b20ca2ac78f64c04c9483da7cbc2459b", size = 519335 },
-]
-
-[[distribution]]
-name = "datasets"
 version = "2.20.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "aiohttp" },
     { name = "dill" },
     { name = "filelock" },
-    { name = "fsspec", version = "2024.5.0", source = { registry = "https://pypi.org/simple" } },
-    { name = "fsspec", version = "2024.5.0", source = { registry = "https://pypi.org/simple" }, extra = "http" },
+    { name = "fsspec" },
+    { name = "fsspec", extra = "http" },
     { name = "huggingface-hub" },
     { name = "multiprocess" },
     { name = "numpy" },
@@ -845,8 +820,7 @@ wheels = [
 
 [distribution.optional-dependencies]
 epath = [
-    { name = "fsspec", version = "2024.5.0", source = { registry = "https://pypi.org/simple" } },
-    { name = "fsspec", version = "2024.6.1", source = { registry = "https://pypi.org/simple" } },
+    { name = "fsspec" },
     { name = "importlib-resources" },
     { name = "typing-extensions" },
     { name = "zipp" },
@@ -860,13 +834,10 @@ name = "evaluate"
 version = "0.4.2"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "datasets", version = "2.14.4", source = { registry = "https://pypi.org/simple" } },
-    { name = "datasets", version = "2.20.0", source = { registry = "https://pypi.org/simple" } },
+    { name = "datasets" },
     { name = "dill" },
-    { name = "fsspec", version = "2024.5.0", source = { registry = "https://pypi.org/simple" } },
-    { name = "fsspec", version = "2024.5.0", source = { registry = "https://pypi.org/simple" }, extra = "http" },
-    { name = "fsspec", version = "2024.6.1", source = { registry = "https://pypi.org/simple" } },
-    { name = "fsspec", version = "2024.6.1", source = { registry = "https://pypi.org/simple" }, extra = "http" },
+    { name = "fsspec" },
+    { name = "fsspec", extra = "http" },
     { name = "huggingface-hub" },
     { name = "multiprocess" },
     { name = "numpy" },
@@ -1105,20 +1076,6 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/eb/06/732cefc0c46c638e4426a859a372a50e4c9d62e65dbfa7ddcf0b13e6a4f2/frozenlist-1.4.1-cp39-cp39-win32.whl", hash = "sha256:a7496bfe1da7fb1a4e1cc23bb67c58fab69311cc7d32b5a99c2007b4b2a0e932", size = 44825 },
     { url = "https://files.pythonhosted.org/packages/29/eb/2110c4be2f622e87864e433efd7c4ee6e4f8a59ff2a93c1aa426ee50a8b8/frozenlist-1.4.1-cp39-cp39-win_amd64.whl", hash = "sha256:e6a20a581f9ce92d389a8c7d7c3dd47c81fd5d6e655c8dddf341e14aa48659d0", size = 50652 },
     { url = "https://files.pythonhosted.org/packages/83/10/466fe96dae1bff622021ee687f68e5524d6392b0a2f80d05001cd3a451ba/frozenlist-1.4.1-py3-none-any.whl", hash = "sha256:04ced3e6a46b4cfffe20f9ae482818e34eba9b5fb0ce4056e4cc9b6e212d09b7", size = 11552 },
-]
-
-[[distribution]]
-name = "fsspec"
-version = "2024.5.0"
-source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/71/28/cbf337fddd6f22686b7c2639b80e006accd904db152fe333fd98f4cd8d1e/fsspec-2024.5.0.tar.gz", hash = "sha256:1d021b0b0f933e3b3029ed808eb400c08ba101ca2de4b3483fbc9ca23fcee94a", size = 400066 }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/ba/a3/16e9fe32187e9c8bc7f9b7bcd9728529faa725231a0c96f2f98714ff2fc5/fsspec-2024.5.0-py3-none-any.whl", hash = "sha256:e0fdbc446d67e182f49a70b82cf7889028a63588fde6b222521f10937b2b670c", size = 316106 },
-]
-
-[distribution.optional-dependencies]
-http = [
-    { name = "aiohttp" },
 ]
 
 [[distribution]]
@@ -1476,8 +1433,7 @@ version = "0.23.5"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "filelock" },
-    { name = "fsspec", version = "2024.5.0", source = { registry = "https://pypi.org/simple" } },
-    { name = "fsspec", version = "2024.6.1", source = { registry = "https://pypi.org/simple" } },
+    { name = "fsspec" },
     { name = "packaging" },
     { name = "pyyaml" },
     { name = "requests" },
@@ -3461,8 +3417,7 @@ wheels = [
 
 [distribution.optional-dependencies]
 tune = [
-    { name = "fsspec", version = "2024.5.0", source = { registry = "https://pypi.org/simple" } },
-    { name = "fsspec", version = "2024.6.1", source = { registry = "https://pypi.org/simple" } },
+    { name = "fsspec" },
     { name = "pandas" },
     { name = "pyarrow" },
     { name = "requests" },
@@ -4708,8 +4663,7 @@ version = "2.3.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "filelock" },
-    { name = "fsspec", version = "2024.5.0", source = { registry = "https://pypi.org/simple" } },
-    { name = "fsspec", version = "2024.6.1", source = { registry = "https://pypi.org/simple" } },
+    { name = "fsspec" },
     { name = "jinja2" },
     { name = "mkl", marker = "platform_system == 'Windows'" },
     { name = "networkx" },
@@ -4845,8 +4799,7 @@ accelerate = [
 ]
 agents = [
     { name = "accelerate" },
-    { name = "datasets", version = "2.14.4", source = { registry = "https://pypi.org/simple" } },
-    { name = "datasets", version = "2.20.0", source = { registry = "https://pypi.org/simple" } },
+    { name = "datasets" },
     { name = "diffusers" },
     { name = "opencv-python" },
     { name = "pillow" },
@@ -4901,8 +4854,7 @@ deepspeed-testing = [
     { name = "accelerate" },
     { name = "beautifulsoup4" },
     { name = "cookiecutter" },
-    { name = "datasets", version = "2.14.4", source = { registry = "https://pypi.org/simple" } },
-    { name = "datasets", version = "2.20.0", source = { registry = "https://pypi.org/simple" } },
+    { name = "datasets" },
     { name = "deepspeed" },
     { name = "dill" },
     { name = "evaluate" },
@@ -4933,8 +4885,7 @@ dev-dependencies = [
     { name = "beautifulsoup4" },
     { name = "codecarbon" },
     { name = "cookiecutter" },
-    { name = "datasets", version = "2.14.4", source = { registry = "https://pypi.org/simple" } },
-    { name = "datasets", version = "2.20.0", source = { registry = "https://pypi.org/simple" } },
+    { name = "datasets" },
     { name = "decord" },
     { name = "dill" },
     { name = "evaluate" },
@@ -5075,8 +5026,7 @@ optuna = [
     { name = "optuna" },
 ]
 quality = [
-    { name = "datasets", version = "2.14.4", source = { registry = "https://pypi.org/simple" } },
-    { name = "datasets", version = "2.20.0", source = { registry = "https://pypi.org/simple" } },
+    { name = "datasets" },
     { name = "gitpython" },
     { name = "hf-doc-builder" },
     { name = "isort" },
@@ -5088,8 +5038,7 @@ ray = [
     { name = "ray", extra = "tune" },
 ]
 retrieval = [
-    { name = "datasets", version = "2.14.4", source = { registry = "https://pypi.org/simple" } },
-    { name = "datasets", version = "2.20.0", source = { registry = "https://pypi.org/simple" } },
+    { name = "datasets" },
     { name = "faiss-cpu" },
 ]
 sentencepiece = [
