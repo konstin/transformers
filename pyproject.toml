@@ -80,7 +80,7 @@ onnx = [
     "onnxruntime-tools>=1.4.2"
 ]
 modelcreation = ["cookiecutter==1.7.3"]
-# sagemaker = ["sagemaker>=2.31.0"] # TODO(konsti)
+sagemaker = ["sagemaker==2.226.1"] # sagemaker>=2.31.0 # TODO(konsti)
 deepspeed = ["deepspeed>=0.9.3", "accelerate>=0.21.0"]
 optuna = ["optuna"]
 ray = ["ray[tune]>=2.7.0"]
