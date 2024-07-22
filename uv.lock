@@ -692,8 +692,7 @@ dependencies = [
     { name = "aiohttp" },
     { name = "dill" },
     { name = "filelock" },
-    { name = "fsspec" },
-    { name = "fsspec", extra = "http" },
+    { name = "fsspec", extra = ["http"] },
     { name = "huggingface-hub" },
     { name = "multiprocess" },
     { name = "numpy" },
@@ -836,8 +835,7 @@ source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "datasets" },
     { name = "dill" },
-    { name = "fsspec" },
-    { name = "fsspec", extra = "http" },
+    { name = "fsspec", extra = ["http"] },
     { name = "huggingface-hub" },
     { name = "multiprocess" },
     { name = "numpy" },
@@ -915,8 +913,7 @@ dependencies = [
     { name = "python-multipart" },
     { name = "starlette" },
     { name = "typing-extensions" },
-    { name = "uvicorn" },
-    { name = "uvicorn", extra = "standard" },
+    { name = "uvicorn", extra = ["standard"] },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/a0/ab/9f461ced846964e01c7a6ab25ea79ce2f07743285697b03c8e0e83d72e3e/fastapi-0.111.1.tar.gz", hash = "sha256:ddd1ac34cb1f76c2e2d7f8545a4bcb5463bce4834e81abf0b189e0c359ab2413", size = 288903 }
 wheels = [
@@ -1080,11 +1077,11 @@ wheels = [
 
 [[distribution]]
 name = "fsspec"
-version = "2024.6.1"
+version = "2024.5.0"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/90/b6/eba5024a9889fcfff396db543a34bef0ab9d002278f163129f9f01005960/fsspec-2024.6.1.tar.gz", hash = "sha256:fad7d7e209dd4c1208e3bbfda706620e0da5142bebbd9c384afb95b07e798e49", size = 284584 }
+sdist = { url = "https://files.pythonhosted.org/packages/71/28/cbf337fddd6f22686b7c2639b80e006accd904db152fe333fd98f4cd8d1e/fsspec-2024.5.0.tar.gz", hash = "sha256:1d021b0b0f933e3b3029ed808eb400c08ba101ca2de4b3483fbc9ca23fcee94a", size = 400066 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/5e/44/73bea497ac69bafde2ee4269292fa3b41f1198f4bb7bbaaabde30ad29d4a/fsspec-2024.6.1-py3-none-any.whl", hash = "sha256:3cb443f8bcd2efb31295a5b9fdb02aee81d8452c80d28f97a6d0959e6cee101e", size = 177561 },
+    { url = "https://files.pythonhosted.org/packages/ba/a3/16e9fe32187e9c8bc7f9b7bcd9728529faa725231a0c96f2f98714ff2fc5/fsspec-2024.5.0-py3-none-any.whl", hash = "sha256:e0fdbc446d67e182f49a70b82cf7889028a63588fde6b222521f10937b2b670c", size = 316106 },
 ]
 
 [distribution.optional-dependencies]
@@ -1429,7 +1426,7 @@ wheels = [
 
 [[distribution]]
 name = "huggingface-hub"
-version = "0.23.5"
+version = "0.24.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "filelock" },
@@ -1440,9 +1437,9 @@ dependencies = [
     { name = "tqdm" },
     { name = "typing-extensions" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/ce/6c/bbffe9299f03deb2c725eb67f1f7eede207bbbfc15a3cba0ff8dabfe26a9/huggingface_hub-0.23.5.tar.gz", hash = "sha256:67a9caba79b71235be3752852ca27da86bd54311d2424ca8afdb8dda056edf98", size = 335077 }
+sdist = { url = "https://files.pythonhosted.org/packages/66/84/9240cb3fc56112c7093ef84ece44a555386263e7a19c81a4c847fd7e2bba/huggingface_hub-0.24.0.tar.gz", hash = "sha256:6c7092736b577d89d57b3cdfea026f1b0dc2234ae783fa0d59caf1bf7d52dfa7", size = 350650 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/2a/6e/46c71094566fe58663bd661a8ce11c26b25d717a11ed8289f6b94ad72a3b/huggingface_hub-0.23.5-py3-none-any.whl", hash = "sha256:d7a7d337615e11a45cc14a0ce5a605db6b038dc24af42866f731684825226e90", size = 402757 },
+    { url = "https://files.pythonhosted.org/packages/57/c0/cf4435f3186655e3bafdca08cd6c794e3866f1f89ed99595504e7240b6a2/huggingface_hub-0.24.0-py3-none-any.whl", hash = "sha256:7ad92edefb93d8145c061f6df8d99df2ff85f8379ba5fac8a95aca0642afa5d7", size = 419029 },
 ]
 
 [[distribution]]
@@ -1459,16 +1456,16 @@ wheels = [
 
 [[distribution]]
 name = "hypothesis"
-version = "6.108.2"
+version = "6.108.3"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "attrs" },
     { name = "exceptiongroup", marker = "python_version < '3.11'" },
     { name = "sortedcontainers" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/aa/a2/81707815a0b5a1be4432833f28f5d827d6257fc6e270ea383873992867ab/hypothesis-6.108.2.tar.gz", hash = "sha256:62cf1c16bd98548b6a84007c5fb8cf6d9cb358dad870adb4f236c795ef162fdd", size = 404442 }
+sdist = { url = "https://files.pythonhosted.org/packages/5e/78/188bed383925f4ead46be06f0a70070bd7c37bf370b8ef4bf5b1379b9210/hypothesis-6.108.3.tar.gz", hash = "sha256:095f2b049fba33f7920889e513b675dbf112bb740bc8d1ea433fdf7fd23cf37e", size = 404437 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/6c/f7/66279227de1a500724e90ef11d0f47a21342454e50acf50ee0148e9eda00/hypothesis-6.108.2-py3-none-any.whl", hash = "sha256:2341d21d0e956bad8bd6269aa7d4f3233507f3ed52380c60ceb2f8b71f87a8e5", size = 465186 },
+    { url = "https://files.pythonhosted.org/packages/18/d3/bf043213834b360021ed05f132dc81113bc16744ae5b22cdc987bb6aaf83/hypothesis-6.108.3-py3-none-any.whl", hash = "sha256:fcc6864881d6ceab6924d77d81e3ed43fb820452293e4e07a2c81e0a95a65185", size = 465145 },
 ]
 
 [[distribution]]
@@ -2473,6 +2470,7 @@ name = "nvidia-nvjitlink-cu12"
 version = "12.5.82"
 source = { registry = "https://pypi.org/simple" }
 wheels = [
+    { url = "https://files.pythonhosted.org/packages/65/93/4934518fecebfa5696f179ee984d028a39589515d7994bd7e30da396a89a/nvidia_nvjitlink_cu12-12.5.82-py3-none-manylinux2014_aarch64.whl", hash = "sha256:98103729cc5226e13ca319a10bbf9433bbbd44ef64fe72f45f067cacc14b8d27", size = 20774026 },
     { url = "https://files.pythonhosted.org/packages/75/bc/e0d0dbb85246a086ab14839979039647bce501d8c661a159b8b019d987b7/nvidia_nvjitlink_cu12-12.5.82-py3-none-manylinux2014_x86_64.whl", hash = "sha256:f9b37bc5c8cf7509665cb6ada5aaa0ce65618f2332b7d3e78e9790511f111212", size = 21298879 },
     { url = "https://files.pythonhosted.org/packages/a4/1a/10828d8c7b8addc4a435dd57112ea544d594ef899a86700897558531492e/nvidia_nvjitlink_cu12-12.5.82-py3-none-win_amd64.whl", hash = "sha256:e782564d705ff0bf61ac3e1bf730166da66dd2fe9012f111ede5fc49b64ae697", size = 161776086 },
 ]
@@ -2665,9 +2663,7 @@ version = "0.5.16"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "absl-py" },
-    { name = "etils" },
-    { name = "etils", extra = "epath" },
-    { name = "etils", extra = "epy" },
+    { name = "etils", extra = ["epath", "epy"] },
     { name = "jax" },
     { name = "jaxlib" },
     { name = "msgpack" },
@@ -3966,11 +3962,11 @@ wheels = [
 
 [[distribution]]
 name = "setuptools"
-version = "71.0.1"
+version = "71.1.0"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/55/a2/640f943c98800be626d5e4d48070e35bb891733218cf6ce562a8df53b9af/setuptools-71.0.1.tar.gz", hash = "sha256:c51d7fd29843aa18dad362d4b4ecd917022131425438251f4e3d766c964dd1ad", size = 2343234 }
+sdist = { url = "https://files.pythonhosted.org/packages/32/c0/5b8013b5a812701c72e3b1e2b378edaa6514d06bee6704a5ab0d7fa52931/setuptools-71.1.0.tar.gz", hash = "sha256:032d42ee9fb536e33087fb66cac5f840eb9391ed05637b3f2a76a7c8fb477936", size = 2422233 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/39/11/6159cc30f99dbdccac3c74d67277505d0e0bfc059e6cc57ef2eefc9b8751/setuptools-71.0.1-py3-none-any.whl", hash = "sha256:1eb8ef012efae7f6acbc53ec0abde4bc6746c43087fd215ee09e1df48998711f", size = 2239469 },
+    { url = "https://files.pythonhosted.org/packages/51/a0/ee460cc54e68afcf33190d198299c9579a5eafeadef0016ae8563237ccb6/setuptools-71.1.0-py3-none-any.whl", hash = "sha256:33874fdc59b3188304b2e7c80d9029097ea31627180896fb549c578ceb8a0855", size = 2341722 },
 ]
 
 [[distribution]]
@@ -4155,14 +4151,14 @@ wheels = [
 
 [[distribution]]
 name = "sudachidict-core"
-version = "20240409"
+version = "20240716"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "sudachipy" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/e2/aa/d8f175c3465654871fc5c7a8b5e89aee14fafdacf5bbbfda4b14ae1e7aec/SudachiDict-core-20240409.tar.gz", hash = "sha256:341eb2fdf1ce3a0db329213b01e0dea2f0e3db26ea1f5244c43c4a1cd739d41e", size = 9014 }
+sdist = { url = "https://files.pythonhosted.org/packages/ae/35/954cb4488c42cabbe3a352482d2ce64de42b8171c54b1ad31861cbbb97e2/SudachiDict-core-20240716.tar.gz", hash = "sha256:90380263fd3e597240b38001cdcb4d7ae3781fcbf4c92f31cc4d1a4b5c41eea9", size = 9009 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/57/8a/b15e9c7a2b601eea484af8e2d958d22b62315476e954794c3a186615edd1/SudachiDict_core-20240409-py3-none-any.whl", hash = "sha256:99b165574f9fe7a42c9caee2f4f274d22f8c99602eaba2863575bbc09020a2fb", size = 72012750 },
+    { url = "https://files.pythonhosted.org/packages/f9/4e/7496687bb41b10b05c9f19e871e730254adf20ce1b16d695fa7cb305830f/SudachiDict_core-20240716-py3-none-any.whl", hash = "sha256:29b69eb016c5da7fcbf7cc1dee1c4bdfc323af2e9638106ba62e490f97d86cc9", size = 72043340 },
 ]
 
 [[distribution]]
@@ -4187,14 +4183,14 @@ wheels = [
 
 [[distribution]]
 name = "sympy"
-version = "1.13.0"
+version = "1.13.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "mpmath" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/cb/f5/8c7d91ce35816b72c2dd061dc4a33f00f59053aeffe881d42aed17279381/sympy-1.13.0.tar.gz", hash = "sha256:3b6af8f4d008b9a1a6a4268b335b984b23835f26d1d60b0526ebc71d48a25f57", size = 7532455 }
+sdist = { url = "https://files.pythonhosted.org/packages/ca/99/5a5b6f19ff9f083671ddf7b9632028436167cd3d33e11015754e41b249a4/sympy-1.13.1.tar.gz", hash = "sha256:9cebf7e04ff162015ce31c9c6c9144daa34a93bd082f54fd8f12deca4f47515f", size = 7533040 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/62/74/7e6c65ee89ff43942bffffdbb238634f16967bf327aee3c76efcf6e49587/sympy-1.13.0-py3-none-any.whl", hash = "sha256:6b0b32a4673fb91bd3cac3b55406c8e01d53ae22780be467301cc452f6680c92", size = 6188245 },
+    { url = "https://files.pythonhosted.org/packages/b2/fe/81695a1aa331a842b582453b605175f419fe8540355886031328089d840a/sympy-1.13.1-py3-none-any.whl", hash = "sha256:db36cdc64bf61b9b24578b6f7bab1ecdd2452cf008f34faa33776680c26d66f8", size = 6189177 },
 ]
 
 [[distribution]]
@@ -4825,7 +4821,7 @@ all = [
     { name = "protobuf" },
     { name = "pyctcdecode" },
     { name = "ray" },
-    { name = "ray", extra = "tune" },
+    { name = "ray", extra = ["tune"] },
     { name = "sentencepiece" },
     { name = "sigopt" },
     { name = "tensorflow" },
@@ -4918,7 +4914,7 @@ dev-dependencies = [
     { name = "pytest-timeout" },
     { name = "pytest-xdist" },
     { name = "ray" },
-    { name = "ray", extra = "tune" },
+    { name = "ray", extra = ["tune"] },
     { name = "rhoknp" },
     { name = "rjieba" },
     { name = "rouge-score" },
@@ -4964,7 +4960,7 @@ docs = [
     { name = "protobuf" },
     { name = "pyctcdecode" },
     { name = "ray" },
-    { name = "ray", extra = "tune" },
+    { name = "ray", extra = ["tune"] },
     { name = "sentencepiece" },
     { name = "sigopt" },
     { name = "tensorflow" },
@@ -4997,7 +4993,7 @@ ftfy = [
 integrations = [
     { name = "optuna" },
     { name = "ray" },
-    { name = "ray", extra = "tune" },
+    { name = "ray", extra = ["tune"] },
     { name = "sigopt" },
 ]
 ja = [
@@ -5035,7 +5031,7 @@ quality = [
 ]
 ray = [
     { name = "ray" },
-    { name = "ray", extra = "tune" },
+    { name = "ray", extra = ["tune"] },
 ]
 retrieval = [
     { name = "datasets" },
@@ -5233,16 +5229,16 @@ wheels = [
 
 [[distribution]]
 name = "uvicorn"
-version = "0.30.1"
+version = "0.30.3"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "click" },
     { name = "h11" },
     { name = "typing-extensions", marker = "python_version < '3.11'" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/37/16/9f5ccaa1a76e5bfbaa0c67640e2db8a5214ca08d92a1b427fa1677b3da88/uvicorn-0.30.1.tar.gz", hash = "sha256:d46cd8e0fd80240baffbcd9ec1012a712938754afcf81bce56c024c1656aece8", size = 42572 }
+sdist = { url = "https://files.pythonhosted.org/packages/77/40/b650be95700dc83d14c5f2b9eac9deb23cbca757a12ee20e473b5ef1ac48/uvicorn-0.30.3.tar.gz", hash = "sha256:0d114d0831ff1adbf231d358cbf42f17333413042552a624ea6a9b4c33dcfd81", size = 42762 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/b2/f9/e6f30ba6094733e4f9794fd098ca0543a19b07ac1fa3075d595bf0f1fb60/uvicorn-0.30.1-py3-none-any.whl", hash = "sha256:cd17daa7f3b9d7a24de3617820e634d0933b69eed8e33a516071174427238c81", size = 62393 },
+    { url = "https://files.pythonhosted.org/packages/63/84/2a26b4eac1cf0c6b5b176dd4346cc4912af5e1b0efc150b865e28636ac34/uvicorn-0.30.3-py3-none-any.whl", hash = "sha256:94a3608da0e530cea8f69683aa4126364ac18e3826b6630d1a65f4638aade503", size = 62760 },
 ]
 
 [distribution.optional-dependencies]
