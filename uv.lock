@@ -1,6 +1,6 @@
 version = 1
 requires-python = ">=3.9.0"
-environment-markers = [
+resolution-markers = [
     "python_full_version < '3.10' and platform_machine == 'aarch64' and platform_system == 'Linux'",
     "python_full_version < '3.10' and platform_machine == 'arm64' and platform_system == 'Darwin'",
     "(python_full_version < '3.10' and platform_machine != 'aarch64' and platform_machine != 'arm64') or (python_full_version < '3.10' and platform_machine == 'aarch64' and platform_system != 'Linux') or (python_full_version < '3.10' and platform_machine == 'arm64' and platform_system != 'Darwin')",
@@ -1051,7 +1051,7 @@ wheels = [
 name = "flatbuffers"
 version = "2.0.7"
 source = { registry = "https://pypi.org/simple" }
-environment-markers = [
+resolution-markers = [
     "python_full_version < '3.10' and platform_machine == 'arm64' and platform_system == 'Darwin'",
     "(python_full_version < '3.10' and platform_machine != 'aarch64' and platform_machine != 'arm64') or (python_full_version < '3.10' and platform_machine == 'aarch64' and platform_system != 'Linux') or (python_full_version < '3.10' and platform_machine == 'arm64' and platform_system != 'Darwin')",
     "python_full_version == '3.10.*' and platform_system == 'Darwin'",
@@ -1073,7 +1073,7 @@ wheels = [
 name = "flatbuffers"
 version = "24.3.25"
 source = { registry = "https://pypi.org/simple" }
-environment-markers = [
+resolution-markers = [
     "python_full_version < '3.10' and platform_machine == 'aarch64' and platform_system == 'Linux'",
     "python_full_version >= '3.13' and platform_system == 'Darwin'",
     "python_full_version >= '3.13' and platform_machine == 'aarch64' and platform_system == 'Linux'",
@@ -1237,7 +1237,7 @@ wheels = [
 name = "gast"
 version = "0.4.0"
 source = { registry = "https://pypi.org/simple" }
-environment-markers = [
+resolution-markers = [
     "python_full_version < '3.10' and platform_machine == 'arm64' and platform_system == 'Darwin'",
     "(python_full_version < '3.10' and platform_machine != 'aarch64' and platform_machine != 'arm64') or (python_full_version < '3.10' and platform_machine == 'aarch64' and platform_system != 'Linux') or (python_full_version < '3.10' and platform_machine == 'arm64' and platform_system != 'Darwin')",
     "python_full_version == '3.10.*' and platform_system == 'Darwin'",
@@ -1259,7 +1259,7 @@ wheels = [
 name = "gast"
 version = "0.6.0"
 source = { registry = "https://pypi.org/simple" }
-environment-markers = [
+resolution-markers = [
     "python_full_version < '3.10' and platform_machine == 'aarch64' and platform_system == 'Linux'",
     "python_full_version >= '3.13' and platform_system == 'Darwin'",
     "python_full_version >= '3.13' and platform_machine == 'aarch64' and platform_system == 'Linux'",
@@ -1754,7 +1754,7 @@ sdist = { url = "https://files.pythonhosted.org/packages/97/76/6a7479e3546d34ee4
 name = "keras"
 version = "2.7.0"
 source = { registry = "https://pypi.org/simple" }
-environment-markers = [
+resolution-markers = [
     "python_full_version < '3.10' and platform_machine == 'arm64' and platform_system == 'Darwin'",
     "(python_full_version < '3.10' and platform_machine != 'aarch64' and platform_machine != 'arm64') or (python_full_version < '3.10' and platform_machine == 'aarch64' and platform_system != 'Linux') or (python_full_version < '3.10' and platform_machine == 'arm64' and platform_system != 'Darwin')",
     "python_full_version == '3.10.*' and platform_system == 'Darwin'",
@@ -1775,7 +1775,7 @@ wheels = [
 name = "keras"
 version = "2.15.0"
 source = { registry = "https://pypi.org/simple" }
-environment-markers = [
+resolution-markers = [
     "python_full_version < '3.10' and platform_machine == 'aarch64' and platform_system == 'Linux'",
     "python_full_version >= '3.13' and platform_system == 'Darwin'",
     "python_full_version >= '3.13' and platform_machine == 'aarch64' and platform_system == 'Linux'",
@@ -2110,7 +2110,7 @@ wheels = [
 name = "ml-dtypes"
 version = "0.3.2"
 source = { registry = "https://pypi.org/simple" }
-environment-markers = [
+resolution-markers = [
     "python_full_version < '3.10' and platform_machine == 'aarch64' and platform_system == 'Linux'",
     "python_full_version >= '3.13' and platform_system == 'Darwin'",
     "python_full_version >= '3.13' and platform_machine == 'aarch64' and platform_system == 'Linux'",
@@ -2143,7 +2143,7 @@ wheels = [
 name = "ml-dtypes"
 version = "0.4.0"
 source = { registry = "https://pypi.org/simple" }
-environment-markers = [
+resolution-markers = [
     "python_full_version < '3.10' and platform_machine == 'arm64' and platform_system == 'Darwin'",
     "(python_full_version < '3.10' and platform_machine != 'aarch64' and platform_machine != 'arm64') or (python_full_version < '3.10' and platform_machine == 'aarch64' and platform_system != 'Linux') or (python_full_version < '3.10' and platform_machine == 'arm64' and platform_system != 'Darwin')",
     "python_full_version == '3.10.*' and platform_system == 'Darwin'",
@@ -4444,7 +4444,7 @@ wheels = [
 name = "tensorboard"
 version = "2.15.2"
 source = { registry = "https://pypi.org/simple" }
-environment-markers = [
+resolution-markers = [
     "python_full_version < '3.10' and platform_machine == 'aarch64' and platform_system == 'Linux'",
     "python_full_version >= '3.13' and platform_system == 'Darwin'",
     "python_full_version >= '3.13' and platform_machine == 'aarch64' and platform_system == 'Linux'",
@@ -4472,7 +4472,7 @@ wheels = [
 name = "tensorboard"
 version = "2.17.1"
 source = { registry = "https://pypi.org/simple" }
-environment-markers = [
+resolution-markers = [
     "python_full_version < '3.10' and platform_machine == 'arm64' and platform_system == 'Darwin'",
     "(python_full_version < '3.10' and platform_machine != 'aarch64' and platform_machine != 'arm64') or (python_full_version < '3.10' and platform_machine == 'aarch64' and platform_system != 'Linux') or (python_full_version < '3.10' and platform_machine == 'arm64' and platform_system != 'Darwin')",
     "python_full_version == '3.10.*' and platform_system == 'Darwin'",
@@ -4529,7 +4529,7 @@ wheels = [
 name = "tensorflow"
 version = "2.7.2"
 source = { registry = "https://pypi.org/simple" }
-environment-markers = [
+resolution-markers = [
     "python_full_version < '3.10' and platform_machine == 'arm64' and platform_system == 'Darwin'",
     "(python_full_version < '3.10' and platform_machine != 'aarch64' and platform_machine != 'arm64') or (python_full_version < '3.10' and platform_machine == 'aarch64' and platform_system != 'Linux') or (python_full_version < '3.10' and platform_machine == 'arm64' and platform_system != 'Darwin')",
     "python_full_version == '3.10.*' and platform_system == 'Darwin'",
@@ -4575,7 +4575,7 @@ wheels = [
 name = "tensorflow"
 version = "2.15.1"
 source = { registry = "https://pypi.org/simple" }
-environment-markers = [
+resolution-markers = [
     "python_full_version < '3.10' and platform_machine == 'aarch64' and platform_system == 'Linux'",
     "python_full_version >= '3.13' and platform_system == 'Darwin'",
     "python_full_version >= '3.13' and platform_machine == 'aarch64' and platform_system == 'Linux'",
@@ -4627,7 +4627,7 @@ wheels = [
 name = "tensorflow-cpu"
 version = "2.7.2"
 source = { registry = "https://pypi.org/simple" }
-environment-markers = [
+resolution-markers = [
     "python_full_version < '3.10' and platform_machine == 'arm64' and platform_system == 'Darwin'",
     "(python_full_version < '3.10' and platform_machine != 'aarch64' and platform_machine != 'arm64') or (python_full_version < '3.10' and platform_machine == 'aarch64' and platform_system != 'Linux') or (python_full_version < '3.10' and platform_machine == 'arm64' and platform_system != 'Darwin')",
     "python_full_version == '3.10.*' and platform_system == 'Darwin'",
@@ -4673,7 +4673,7 @@ wheels = [
 name = "tensorflow-cpu"
 version = "2.15.1"
 source = { registry = "https://pypi.org/simple" }
-environment-markers = [
+resolution-markers = [
     "python_full_version < '3.10' and platform_machine == 'aarch64' and platform_system == 'Linux'",
     "python_full_version >= '3.13' and platform_system == 'Darwin'",
     "python_full_version >= '3.13' and platform_machine == 'aarch64' and platform_system == 'Linux'",
@@ -4753,7 +4753,7 @@ wheels = [
 name = "tensorflow-estimator"
 version = "2.7.0"
 source = { registry = "https://pypi.org/simple" }
-environment-markers = [
+resolution-markers = [
     "python_full_version < '3.10' and platform_machine == 'arm64' and platform_system == 'Darwin'",
     "(python_full_version < '3.10' and platform_machine != 'aarch64' and platform_machine != 'arm64') or (python_full_version < '3.10' and platform_machine == 'aarch64' and platform_system != 'Linux') or (python_full_version < '3.10' and platform_machine == 'arm64' and platform_system != 'Darwin')",
     "python_full_version == '3.10.*' and platform_system == 'Darwin'",
@@ -4774,7 +4774,7 @@ wheels = [
 name = "tensorflow-estimator"
 version = "2.15.0"
 source = { registry = "https://pypi.org/simple" }
-environment-markers = [
+resolution-markers = [
     "python_full_version < '3.10' and platform_machine == 'aarch64' and platform_system == 'Linux'",
     "python_full_version >= '3.13' and platform_system == 'Darwin'",
     "python_full_version >= '3.13' and platform_machine == 'aarch64' and platform_system == 'Linux'",
@@ -4873,7 +4873,7 @@ wheels = [
 name = "tensorflow-text"
 version = "2.7.3"
 source = { registry = "https://pypi.org/simple" }
-environment-markers = [
+resolution-markers = [
     "python_full_version < '3.10' and platform_machine == 'arm64' and platform_system == 'Darwin'",
     "(python_full_version < '3.10' and platform_machine != 'aarch64' and platform_machine != 'arm64') or (python_full_version < '3.10' and platform_machine == 'aarch64' and platform_system != 'Linux') or (python_full_version < '3.10' and platform_machine == 'arm64' and platform_system != 'Darwin')",
     "python_full_version == '3.10.*' and platform_system == 'Darwin'",
@@ -4900,7 +4900,7 @@ wheels = [
 name = "tensorflow-text"
 version = "2.15.0"
 source = { registry = "https://pypi.org/simple" }
-environment-markers = [
+resolution-markers = [
     "python_full_version < '3.10' and platform_machine == 'aarch64' and platform_system == 'Linux'",
     "python_full_version >= '3.13' and platform_system == 'Darwin'",
     "python_full_version >= '3.13' and platform_machine == 'aarch64' and platform_system == 'Linux'",
@@ -4975,7 +4975,7 @@ wheels = [
 name = "tf-keras"
 version = "2.15.0"
 source = { registry = "https://pypi.org/simple" }
-environment-markers = [
+resolution-markers = [
     "python_full_version < '3.10' and platform_machine == 'arm64' and platform_system == 'Darwin'",
     "(python_full_version < '3.10' and platform_machine != 'aarch64' and platform_machine != 'arm64') or (python_full_version < '3.10' and platform_machine == 'aarch64' and platform_system != 'Linux') or (python_full_version < '3.10' and platform_machine == 'arm64' and platform_system != 'Darwin')",
     "python_full_version == '3.10.*' and platform_system == 'Darwin'",
@@ -4997,7 +4997,7 @@ wheels = [
 name = "tf-keras"
 version = "2.15.1"
 source = { registry = "https://pypi.org/simple" }
-environment-markers = [
+resolution-markers = [
     "python_full_version < '3.10' and platform_machine == 'aarch64' and platform_system == 'Linux'",
     "python_full_version >= '3.13' and platform_system == 'Darwin'",
     "python_full_version >= '3.13' and platform_machine == 'aarch64' and platform_system == 'Linux'",
@@ -5015,7 +5015,7 @@ wheels = [
 name = "tf2onnx"
 version = "1.8.4"
 source = { registry = "https://pypi.org/simple" }
-environment-markers = [
+resolution-markers = [
     "python_full_version < '3.10' and platform_machine == 'aarch64' and platform_system == 'Linux'",
     "python_full_version == '3.10.*' and platform_system == 'Darwin'",
     "python_full_version == '3.10.*' and platform_machine == 'aarch64' and platform_system == 'Linux'",
@@ -5046,7 +5046,7 @@ wheels = [
 name = "tf2onnx"
 version = "1.14.0"
 source = { registry = "https://pypi.org/simple" }
-environment-markers = [
+resolution-markers = [
     "python_full_version < '3.10' and platform_machine == 'arm64' and platform_system == 'Darwin'",
     "(python_full_version < '3.10' and platform_machine != 'aarch64' and platform_machine != 'arm64') or (python_full_version < '3.10' and platform_machine == 'aarch64' and platform_system != 'Linux') or (python_full_version < '3.10' and platform_machine == 'arm64' and platform_system != 'Darwin')",
 ]
